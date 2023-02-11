@@ -2,6 +2,9 @@
 
 # DICTIONARY AND LOOP OF PROGRAM
 
+
+
+
 def introDuction():
     
     print("""\n This program ask the user to enter an abbreviation of a phrase 
@@ -27,19 +30,56 @@ def abbrevDict():
 
 def loopInputs():
     x = abbrevDict()
+    z =list(x.keys())
+    index_z = -1
     
-   
     
     while True :
-        user = input("\n what abbreviation you want to know ? ")
-       
-        question = input("Do you want to continue?(yes or no) ")
+        
+        #z =list(x.keys())
+        index =0 
+        
+     
+        user = input("""\n 
+        Tap "exit" to exit the program,
+        what abbreviation you want to know ?: """
+        )
+     
+        #for k, v in x.items():
+        for k in z :   
+            if  k == user :
+                #x[user]= v
+                #print(f"{user} mean : {x[user]}")
+                index_z = index
+                #print(k, index)
+                
+            index = index + 1  
+               
+        if index_z == -1 :
+            print(f"{user} cannot be found,try again")
+        else :
+            print(f"{user} mean : {x[user]}")    
+                    
+             
+                
+        
+        question = input("Do you want to continue?(yes or no)?: ")
+        
+        
         if question.upper() == "NO" :
-           print("Goodbye")
+           print("\n Goodbye!") 
+           
            break
-        for k, v in x.items():
-            if x[user]== v :
-                print(f"{user} mean {v}")
+        print("\n\t ok, let us start again") 
+            
+       
+        
+        
+       
+      
+            
+            
+           
               
         
 loopInputs()        
@@ -47,6 +87,7 @@ loopInputs()
   
 
 def main():
+    h = introDuction()
     pass
 """
 def my_function(fname, lname):
