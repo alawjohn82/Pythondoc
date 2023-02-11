@@ -23,7 +23,7 @@ Exemple d'affiche
  x=val
  NaN
  x1=val, x2=val
- x1=val, x2=val 
+ x1=val, x2=val  
  x=val
  NaN 
  x1=val, x2=val 
@@ -38,3 +38,13 @@ Exemple d'affiche
 Ou
 
 Erreur dans le fichier et la ligne 6.
+
+
+
+python fff.py
+python fff.py -i foux.txt -o f.txt
+python fff.py -o tf.txt -i f.txt
+python fff.py -i t.txt
+python fff.py -o f.txt 
+python  ok ok
+
