@@ -1,0 +1,4 @@
+
+
+a = "abalo"
+print(a)
